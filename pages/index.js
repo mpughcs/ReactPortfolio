@@ -13,13 +13,13 @@ export default function Home() {
   return (
     <div className={darkMode ? "dark": ""}>
       <Head>
-      <title>My portfolio</title>
-      <meta name="description" content="My portfolio" />
+      <title>Max Pugh</title>
+      <meta name="description" content="Max Pugh" />
       <link rel="icon" href="images/tempImg.png" />
 
 
       </Head>
-      <main className='bg-white md:px-20 dark:bg-gray-900 text-gray-700 dark:text-gray-200 duration-200 sm:px-5 p-5 '>
+      <main className='bg-white md:px-20 dark:bg-gray-900 text-gray-700 dark:text-gray-200 duration-200 sm:px-5 p-5'>
         <section className=" min-h-screen ">
           <nav className=' mb-12 flex justify-between'>
             <h1 className='font-mulish text-4xl md:text-5xl dark:text-gray-200 text-gray-600'>max pugh</h1>
@@ -57,7 +57,7 @@ export default function Home() {
           <div className='text-center shadow-lg p-10 rounded-xl my-10 dark:bg-gray-800 '>
             <Image src = '/images/coding.png' width={200} height={200} className=' mx-auto'/>
             <h3 className='text-lg font-medium pt-8 pb-2'>Software</h3>
-            <p className='py-2 max-w-s mx-auto'> Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia,</p>
+            <p className='py-2 max-w-sm mx-auto'>I'm always learning new frameworks and languages, but here are a few of my favorites </p>
             <h4 className='text-green-400'>Technolgies I use:</h4>
             <div className=' gap-8 py-3 flex justify-evenly'>
               <div className=''>
