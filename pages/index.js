@@ -33,7 +33,7 @@ export default function Home() {
             <h2 className='text-5xl py-2 text-green-400 font-medium md:text-6xl'>Max Gulati Pugh</h2>
             <h3 className='text-2xl py-2 md:text-3xl'>Software Engineer</h3>
             <p className='leading-10 md:leading-10 text-md py-5 md:text-xl sm:max-w-4xl mx-auto'> 
-            I'm a Los Angeles based software developer and musician orignally from Saint Louis, Missouri. I am enthusiastic about learning many areas of development and enjoy combining my passions of music, technology and design to create new and interesting things to share with others.
+            I'm a Los Angeles based software developer and musician originally from Saint Louis, Missouri. My creative journey has given me a deep appreciation for diverse perspectives, understanding that the best solutions emerge from varied minds. I firmly believe in crafting tech solutions that cater to everyone, valuing accessibility and functionality in equal measure.
 
 
               </p>
@@ -46,8 +46,8 @@ export default function Home() {
           <div className='py-10'>
             <Image src='/images/tempImg.png' width={300} height={300} className='rounded-full mx-auto md:h-96 md:w-96'/>
           </div>
-          <div>
-          <h3 className='text-2xl py-2'>Services I Offer</h3>
+          <div className='sm:py-10'>
+          <h3 className='text-2xl '>Services I Offer</h3>
             <p className='text-md py-5 leading-8 dark: md:text-xl max-w-4xl'>Creating from start to finish is my passion</p>
           </div>
 
