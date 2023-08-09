@@ -19,20 +19,20 @@ export default function Home() {
 
 
       </Head>
-      <main className='bg-white p-16 md:px-20 dark:bg-gray-900 text-gray-700 dark:text-gray-200 duration-200 lg:px-44'>
+      <main className='bg-white md:px-20 dark:bg-gray-900 text-gray-700 dark:text-gray-200 duration-200 sm:px-5 p-5 '>
         <section className=" min-h-screen ">
           <nav className=' mb-12 flex justify-between'>
-            <h1 className='font-mulish text-3xl md:text-4xl'>max pugh</h1>
+            <h1 className='font-mulish text-4xl md:text-5xl dark:text-gray-200 text-gray-600'>max pugh</h1>
             <ul className='flex items-center'>
               <span className='hover:translate-x-1 duration-100 '><li><BsFillMoonStarsFill onClick={()=> setDarkMode(!darkMode)} className='cursor-pointer text-xl'/></li></span>
               <span className='hover:translate-x-1 duration-100'><li className=' p-2 rounded-s-xl bg-gradient-to-br from-green-400 to-green-100 text-gray-700 ml-8 cursor-pointer lg:p-4 lg:text-xl font-mulish'><a className="bg-cyan " href='https://docs.google.com/document/d/1ltW_z3f44Tk6u_A94l-yRu90Wby3NKEd6uH4IcWg3Pc/edit?usp=sharing'>Resume</a></li></span>
               
             </ul>
           </nav>
-          <div className='text-center pt-10 px-10 '>
+          <div className='text-center pt-10 sm:px-10 '>
             <h2 className='text-5xl py-2 text-green-400 font-medium md:text-6xl'>Max Gulati Pugh</h2>
             <h3 className='text-2xl py-2 md:text-3xl'>Software Engineer</h3>
-            <p className='leading-10 md:leading-10 text-md py-5 md:text-xl max-w-4xl mx-auto'> 
+            <p className='leading-10 md:leading-10 text-md py-5 md:text-xl sm:max-w-4xl mx-auto'> 
             I'm a Los Angeles based software developer and musician orignally from Saint Louis, Missouri. I am enthusiastic about learning many areas of development and enjoy combining my passions of music, technology and design to create new and interesting things to share with others.
 
 
