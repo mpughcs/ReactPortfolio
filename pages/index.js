@@ -165,7 +165,8 @@ export default function Home() {
                         <p className="text-md py-5 leading-8 dark: md:text-xl max-w-6xl">
                             As I near the completion of my CS degree in the winter of 2023, 
                             I'm eager to put my skills to use with a forward thinking team of creative
-                            developers. I'm currently looking for a full time software engineering position for January 2024. If you're interested in working together, lets connect! You can always reach me <span className="text-green-500"> <a href="mailto:maxgpugh01@gmail.com">email</a></span>
+                            developers. I'm currently looking for a full time software engineering position
+                             for January 2024. If you're interested in working together, lets connect! You can always reach me <span className="text-green-500"> <a href="mailto:maxgpugh01@gmail.com">here</a></span>
                             
                             
                         </p>
