@@ -83,7 +83,7 @@ export default function Home() {
 
                         <div className="basis-1/3 flex-1 py-5">
                             <div className="hover:translate-x-1 duration-100">
-                                <a href="https://sundaymourners.com/">
+                                <a href="https://github.com/mpughcs/Notation">
                                     <BiLinkExternal className="text-2xl text-green-400 absolute translate-y-5 translate-x-4" />
                                 </a>
                             </div>
@@ -99,7 +99,7 @@ export default function Home() {
                         </div>
                         <div className="basis-1/3 flex-1 py-5">
                             <div className="hover:translate-x-1 duration-100">
-                                <a href="https://github.com/mpughcs/Notation">
+                                <a href="https://sundaymourners.com/">
                                     <BiLinkExternal className="text-2xl text-green-400 absolute translate-y-5 translate-x-4" />
                                 </a>
                             </div>
@@ -115,7 +115,7 @@ export default function Home() {
                             
                         </div>
 
-                        {showLastImages (
+                        {showLastImages && (
                             <div className="basis-1/3 flex-1 py-5">
                                 <div className="hover:translate-x-1 duration-100">
                                     <a href="https://github.com/mpughcs/Max_Pugh_Java/tree/main/Summative-2-Pugh-Max">
