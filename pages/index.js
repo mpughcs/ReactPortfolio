@@ -115,7 +115,7 @@ export default function Home() {
                             
                         </div>
 
-                        {showLastImages && (
+                        {showLastImages (
                             <div className="basis-1/3 flex-1 py-5">
                                 <div className="hover:translate-x-1 duration-100">
                                     <a href="https://github.com/mpughcs/Max_Pugh_Java/tree/main/Summative-2-Pugh-Max">
