@@ -18,7 +18,7 @@ export default function Home() {
             <main className="bg-white md:px-20 dark:bg-gray-900 text-gray-700 dark:text-gray-200 duration-200 sm:px-5 p-5">
                 <section className=" min-h-screen ">
                     <nav className=" my-3 flex justify-between">
-                        <h1 className="font-mulish text-4xl md:text-5xl dark:text-gray-200 text-gray-600 relative bottom-[7px]">
+                        <h1 className="font-mulish text-4xl md:text-5xl dark:text-gray-200 text-gray-600 align-baseline">
                             max pugh
                         </h1>
                         <ul className="flex items-center">
