@@ -81,32 +81,25 @@ export default function Home() {
                         <p className="text-lg md:text-lg leading-8 gap-10 py-10 max-w-6xl mx-auto">
                             From crafting <span className="text-purple-600">interactive user interfaces</span> to building <span className="text-purple-600">robust server-side logic</span>, I've got the full stack covered. Most recently, I've been using Java with <span className="text-purple-600">Spring Boot</span> and <span className="text-purple-600">AWS</span> to build <span className="text-purple-600">RESTful APIs</span>. I'm also experienced with <span className="text-purple-600">React</span> and <span className="text-purple-600">Next.js</span> for front-end development. I'm always looking to learn new technologies and expand my skillset.
                         </p>
-
-                        <div className="basis-1/3 flex-1 py-5 group" >
-                            
-                           <div className="relative">
-                                <Image
-                                    src="/images/notation1.png"
-                                    width={1200}
-                                    alt="Photo of the Notation desktop app "
-                                    height={1200}
-                                    layout="responsive"
-                                    className="mx-auto rounded-3xl object-cover"
-                                />
-                      
-                            {/* <div className="basis-1/3 flex-1 py-5 absolute rounded-b-3xl m-0 bg-gradient-to-br from-purple-600 to-slate-500 opacity-80 max-w-6xl bottom-0 hidden group-hover:block transition-colors " >
-                            <div className="hover:translate-x-1 duration-100 ">
-                            </div>
-                                <p className="opacity-100 text-white px-5 py-2 inline">Notation is a desktop app for composing music with simple text commands. It's built with Tauri, React, and Rust and can export audio projects to Midi to be used in professional digital audio workstations.</p>
-                                <a className="inline-block" href="https://github.com/mpughcs/Notation">
-                                    <BiLinkExternal className="text-2xl text-green-500" />
+                        <div className="basis-1/3 flex-1 py-5">
+                            <div className="hover:translate-x-1 duration-100">
+                                <a href="https://sundaymourners.com/">
+                                    <BiLinkExternal className="text-2xl text-green-500 absolute translate-y-5 translate-x-4" />
                                 </a>
-                             </div>
-                              */}
+                            </div>
+                            <Image
+                                src="/images/notation1.png"
+                                width={1200}
+                                alt="Photo of the notation desktop application"
+
+                                height={1200}
+                                layout="responsive"
+                                className="mx-auto  rounded-3xl object-cover"
+                            />
                             
-                                
-                           </div>
                         </div>
+
+                        
                         
                         <div className="basis-1/3 flex-1 py-5">
                             <div className="hover:translate-x-1 duration-100">
