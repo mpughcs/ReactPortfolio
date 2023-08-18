@@ -8,6 +8,7 @@ module.exports = {
   ],
   theme: {
     extend: {
+      display: ["group-hover"],
       fontFamily: {
         mulish: ["Mulish", "sans-serif"],
       },

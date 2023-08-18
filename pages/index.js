@@ -8,6 +8,7 @@ import { BiLinkExternal } from "react-icons/bi";
 export default function Home() {
     const [darkMode, setDarkMode] = useState(false);
     const [showLastImages, setShowLastImages] = useState(false);
+    const [showNotationDesc, setShowNotationDesc] = useState(true);
 
     return (
         <div className={darkMode ? "dark" : ""}>
@@ -18,7 +19,7 @@ export default function Home() {
             <main className="bg-white md:px-20 dark:bg-gray-900 text-gray-700 dark:text-gray-200 duration-200 sm:px-5 p-5">
                 <section className=" min-h-screen ">
                     <nav className=" my-3 flex justify-between">
-                        <h1 className="font-mulish text-4xl md:text-5xl dark:text-gray-200 text-gray-600 align-baseline">
+                        <h1 className="font-mulish text-3xl md:text-4xl dark:text-gray-200 text-gray-600 align-baseline">
                             max pugh
                         </h1>
                         <ul className="flex items-center">
@@ -31,7 +32,7 @@ export default function Home() {
                                 </li>
                             </span>
                             <span className="hover:translate-x-1 duration-100">
-                                <li className=" p-2 rounded-s-xl bg-gradient-to-br from-purple-600 to-green-100 text-gray-700 ml-8 cursor-pointer lg:p-4 lg:text-xl font-mulish">
+                                <li className=" p-1 rounded-s-xl bg-gradient-to-br from-purple-600 to-green-100 text-gray-700 ml-8 cursor-pointer lg:p-2 lg:text-xl font-mulish">
                                     <a
                                         className=" "
                                         href="https://docs.google.com/document/d/1ltW_z3f44Tk6u_A94l-yRu90Wby3NKEd6uH4IcWg3Pc/edit?usp=sharing"
@@ -43,14 +44,14 @@ export default function Home() {
                         </ul>
                     </nav>
                     <div className=" pt-10 sm:px-10 max-w-l text-center ">
-                        <h2 className="text-5xl py-2 text-purple-600 font-medium md:text-6xl">
+                        <h2 className="text-4xl py-2 text-purple-600 font-medium md:text-5xl">
                             Max Gulati Pugh
                         </h2>
                         <h3 className="text-2xl py-2 md:text-3xl">Software Engineer</h3>
-                        <p className="leading-10 md:leading-10 text-md py-5 md:text-xl sm:max-w-4xl mx-auto">
+                        <p className="leading-10 md:leading-10 text-md py-5 md:text-l sm:max-w-3xl mx-auto">
                             I'm a Los Angeles based software developer and musician
                             originally from Saint Louis, Missouri. My creative journey has
-                            given me a deep appreciation for diverse perspectives,
+                            given me a deep appreciation for diverse perspectives and an
                             understanding that the best solutions often come from many minds.
                         </p>
                     </div>
@@ -75,28 +76,38 @@ export default function Home() {
                         />
                     </div>
 
-                    <div className="max-w-6xl pt-4 px-xl m-auto ">
+                    <div className="max-w-5xl pt-4 px-xl m-auto relative ">
                         <h3 className="text-3xl py-2 font-mulish"> Portfolio </h3>
                         <p className="text-lg md:text-lg leading-8 gap-10 py-10 max-w-6xl mx-auto">
                             From crafting <span className="text-purple-600">interactive user interfaces</span> to building <span className="text-purple-600">robust server-side logic</span>, I've got the full stack covered. Most recently, I've been using Java with <span className="text-purple-600">Spring Boot</span> and <span className="text-purple-600">AWS</span> to build <span className="text-purple-600">RESTful APIs</span>. I'm also experienced with <span className="text-purple-600">React</span> and <span className="text-purple-600">Next.js</span> for front-end development. I'm always looking to learn new technologies and expand my skillset.
                         </p>
 
-                        <div className="basis-1/3 flex-1 py-5">
-                            <div className="hover:translate-x-1 duration-100">
-                                <a href="https://github.com/mpughcs/Notation">
-                                    <BiLinkExternal className="text-2xl text-green-500 absolute translate-y-5 translate-x-4" />
-                                </a>
+                        <div className="basis-1/3 flex-1 py-5 group" >
+                            
+                           <div className="relative">
+                                <Image
+                                    src="/images/notation1.png"
+                                    width={1200}
+                                    alt="Photo of the Notation desktop app "
+                                    height={1200}
+                                    layout="responsive"
+                                    className="mx-auto rounded-3xl object-cover"
+                                />
+                      
+                            {/* <div className="basis-1/3 flex-1 py-5 absolute rounded-b-3xl m-0 bg-gradient-to-br from-purple-600 to-slate-500 opacity-80 max-w-6xl bottom-0 hidden group-hover:block transition-colors " >
+                            <div className="hover:translate-x-1 duration-100 ">
                             </div>
-                           
-                            <Image
-                                src="/images/notation1.png"
-                                width={1200}
-                                alt="Photo of the Notation desktop app "
-                                height={1200}
-                                layout="responsive"
-                                className="mx-auto rounded-3xl object-cover"
-                            />
+                                <p className="opacity-100 text-white px-5 py-2 inline">Notation is a desktop app for composing music with simple text commands. It's built with Tauri, React, and Rust and can export audio projects to Midi to be used in professional digital audio workstations.</p>
+                                <a className="inline-block" href="https://github.com/mpughcs/Notation">
+                                    <BiLinkExternal className="text-2xl text-green-500" />
+                                </a>
+                             </div>
+                              */}
+                            
+                                
+                           </div>
                         </div>
+                        
                         <div className="basis-1/3 flex-1 py-5">
                             <div className="hover:translate-x-1 duration-100">
                                 <a href="https://sundaymourners.com/">
