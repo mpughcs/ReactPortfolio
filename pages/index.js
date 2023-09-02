@@ -75,15 +75,21 @@ export default function Home() {
                             className="rounded-full mx-auto md:h-96 md:w-96"
                         />
                     </div>
-
-                    <div className="max-w-5xl pt-4 px-xl m-auto relative ">
+                    {/* Portfolio Section */}
+                    <div className="max-w-6xl pt-4 px-xl m-auto relative">
                         <h3 className="text-3xl py-2 font-mulish"> Portfolio </h3>
                         <p className="text-lg md:text-lg leading-8 gap-10 py-10 max-w-6xl mx-auto">
                             From crafting <span className="text-purple-600">interactive user interfaces</span> to building <span className="text-purple-600">robust server-side logic</span>, I've got the full stack covered. Most recently, I've been using Java with <span className="text-purple-600">Spring Boot</span> and <span className="text-purple-600">AWS</span> to build <span className="text-purple-600">RESTful APIs</span>. I'm also experienced with <span className="text-purple-600">React</span> and <span className="text-purple-600">Next.js</span> for front-end development. I'm always looking to learn new technologies and expand my skillset.
                         </p>
-                        <div className="basis-1/3 flex-1 py-5">
+
+
+                    
+                    <div className="flex flex-col gap-10 pt-10 lg:flex-row lg:flex-wrap">
+                        {/* notation UI */}
+
+                        <div className="flex-1 basis-1/3">
                             <div className="hover:translate-x-1 duration-100">
-                                <a href="https://sundaymourners.com/">
+                                <a href="https://github.com/mpughcs/Notation">
                                     <BiLinkExternal className="text-2xl text-green-500 absolute translate-y-5 translate-x-4" />
                                 </a>
                             </div>
@@ -94,14 +100,14 @@ export default function Home() {
 
                                 height={1200}
                                 layout="responsive"
-                                className="mx-auto  rounded-3xl object-cover"
+                                className="mx-auto rounded-3xl object-cover"
                             />
                             
                         </div>
 
                         
-                        
-                        <div className="basis-1/3 flex-1 py-5">
+                        {/* Sunday Mourners site */}
+                        <div className="flex-1 basis-1/3">
                             <div className="hover:translate-x-1 duration-100">
                                 <a href="https://sundaymourners.com/">
                                     <BiLinkExternal className="text-2xl text-green-500 absolute translate-y-5 translate-x-4" />
@@ -118,9 +124,29 @@ export default function Home() {
                             />
                             
                         </div>
-
+                        {/* full stack site */}
                         {showLastImages && (
-                            <div className="basis-1/3 flex-1 py-5">
+                            <div className="flex-1 basis-1/3">
+                                <div className="hover:translate-x-1 duration-100">
+                                    <a href="https://github.com/mpughcs/FullStackGameStore/tree/main">
+                                        <BiLinkExternal className="text-2xl text-green-500 absolute translate-y-5 translate-x-4" />
+                                    </a>
+                                </div>
+                                <Image
+                                    src="/images/gamestore.png"
+                                    width={1200}
+                                    height={1200}
+                                    alt="Photo of the swagger documentation for a spring api"
+                                    layout="responsive"
+                                    className="mx-auto rounded-3xl object-cover"
+                                />
+                            </div>
+                        )}
+
+
+                        {/* Swagger API */}
+                        {showLastImages && (
+                            <div className="flex-1 basis-1/3">
                                 <div className="hover:translate-x-1 duration-100">
                                     <a href="https://github.com/mpughcs/Max_Pugh_Java/tree/main/Summative-2-Pugh-Max">
                                         <BiLinkExternal className="text-2xl text-green-500 absolute translate-y-5 translate-x-4" />
@@ -136,8 +162,10 @@ export default function Home() {
                                 />
                             </div>
                         )}
+
+                        {/* Notation CLI */}
                         {showLastImages && (
-                            <div className="basis-1/3 flex-1 py-5">
+                            <div className="flex-1 basis-1/3">
                                 <div className="hover:translate-x-1 duration-100">
                                     <a href="https://github.com/mpughcs/Notation">
                                         <BiLinkExternal className="text-2xl text-green-500 absolute translate-y-5 translate-x-4" />
@@ -154,17 +182,24 @@ export default function Home() {
                                 />
                             </div>
                         )}
-                        <div className="flex justify-end hover:translate-x-1 duration-100">
+                       
+                    </div>
+                    {/* More Projects Button */}
+                    <div className="py-3 duration-100">
                             <button
-                                className="p-2  rounded-s-xl left-full bg-gradient-to-br from-purple-600 to-green-100 text-gray-700 ml-8 cursor-pointer lg:p-4 lg:text-xl font-mulish"
+                                className="hover:translate-x-1 rounded-s-xl bg-gradient-to-br from-purple-600 to-green-100 text-gray-700 p-2 cursor-pointer lg:p-4 lg:text-xl font-mulish duration-100"
                                 onClick={() => setShowLastImages(!showLastImages)}
                             >
-                                {showLastImages ? "Less Project" : "More Projects"}
+                                {showLastImages ? "Less Projects" : "More Projects"}
                             </button>
-                        </div>
                     </div>
 
-                    <div className="sm:py-10">
+
+                        </div>
+                    
+
+
+                    <div className="py-10 max-w-6xl mx-auto p">
                         <h3 className="text-3xl font-mulish"> Services I Offer </h3>
                         <p className="text-md py-5 leading-8 dark: md:text-xl max-w-6xl">
                             As I near the completion of my CS degree in the winter of 2023, 
@@ -174,10 +209,10 @@ export default function Home() {
                             
                             
                         </p>
-                    </div>
+                    
 
                     {/* cards */}
-                    <div className="xl:flex gap-12 justify-evenly ">
+                    <div className="xl:flex gap-12 justify-evenly mx-auto ">
                         {/* developer card */}
                         <div className="text-center shadow-lg p-10 rounded-xl my-10 dark:bg-gray-800 ">
                             <Image
@@ -262,6 +297,7 @@ export default function Home() {
                                 </div>
                                
                             </div>
+                        </div>
                         </div>
                     </div>
                     
