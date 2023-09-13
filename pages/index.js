@@ -83,28 +83,30 @@ export default function Home() {
                         </p>
 
 
+                        
+
+
                     
                     <div className="flex flex-col gap-10 pt-10 lg:flex-row lg:flex-wrap">
                         {/* notation UI */}
 
                         <div className="flex-1 basis-1/3">
-                            <div className="hover:translate-x-1 duration-100">
-                                <a href="https://github.com/mpughcs/Notation">
-                                    <BiLinkExternal className="text-2xl text-green-500 absolute translate-y-5 translate-x-4" />
-                                </a>
+                                <div className="hover:translate-x-1 duration-100">
+                                    <a href="https://github.com/mpughcs/FullStackGameStore/tree/main">
+                                        <BiLinkExternal className="text-2xl text-green-500 absolute translate-y-5 translate-x-4" />
+                                    </a>
+                                </div>
+                                <Image
+                                    src="/images/gamestore.png"
+                                    width={1200}
+                                    height={1200}
+                                    alt="Photo of the swagger documentation for a spring api"
+                                    layout="responsive"
+                                    className="mx-auto rounded-3xl object-cover"
+                                />
                             </div>
-                            <Image
-                                src="/images/notation1.png"
-                                width={1200}
-                                alt="Photo of the notation desktop application"
 
-                                height={1200}
-                                layout="responsive"
-                                className="mx-auto rounded-3xl object-cover"
-                            />
-                            
-                        </div>
-
+                        
                         
                         {/* Sunday Mourners site */}
                         <div className="flex-1 basis-1/3">
@@ -126,22 +128,28 @@ export default function Home() {
                         </div>
                         {/* full stack site */}
                         {showLastImages && (
+
+
                             <div className="flex-1 basis-1/3">
-                                <div className="hover:translate-x-1 duration-100">
-                                    <a href="https://github.com/mpughcs/FullStackGameStore/tree/main">
-                                        <BiLinkExternal className="text-2xl text-green-500 absolute translate-y-5 translate-x-4" />
-                                    </a>
-                                </div>
-                                <Image
-                                    src="/images/gamestore.png"
-                                    width={1200}
-                                    height={1200}
-                                    alt="Photo of the swagger documentation for a spring api"
-                                    layout="responsive"
-                                    className="mx-auto rounded-3xl object-cover"
-                                />
+                            <div className="hover:translate-x-1 duration-100">
+                                <a href="https://github.com/mpughcs/Notation">
+                                    <BiLinkExternal className="text-2xl text-green-500 absolute translate-y-5 translate-x-4" />
+                                </a>
                             </div>
+                            <Image
+                                src="/images/notation1.png"
+                                width={1200}
+                                alt="Photo of the notation desktop application"
+
+                                height={1200}
+                                layout="responsive"
+                                className="mx-auto rounded-3xl object-cover"
+                            />
+                            
+                        </div>
+
                         )}
+                        
 
 
                         {/* Swagger API */}
