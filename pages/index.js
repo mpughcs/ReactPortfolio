@@ -16,9 +16,8 @@ import { SiTypescript } from "react-icons/si";
 import { SiXcode } from "react-icons/si";
 
 import axios from "axios";
-import AdvertiserThumbnail from "@/Components/AdvertiserThumbnail";
-
-import Project from "@/Components/Project";
+import AdvertiserThumbnail from "@/public/Components/AdvertiserThumbnail";
+import Project from "@/public/Components/Project";
 import { Tooltip } from "react-tooltip";
 
 export default function Home() {
