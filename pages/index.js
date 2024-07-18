@@ -218,7 +218,7 @@ export default function Home() {
 
                         <div className=" flex ">
                             <Image
-                                src={"/images/device-portrait.png"}
+                                src={"/images/device-portrait.webp"}
                                 width={350}
                                 height={1000}
                                 className="md:w-[40%] md:min-w-[460px] w-[200px] h-full"
